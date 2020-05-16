@@ -1,0 +1,279 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	transition: 1.6s;
+	-webkit-transition: 1.6s;
+} 
+
+header{
+	display: flex;
+	background-color: #d4d1d1;
+	height: 8vh;
+	margin:auto;
+	align-items:center;
+	
+
+}
+.logo{
+	height: 8vh;
+}
+
+.logo-container{
+	flex:2;
+	color:#2527af;
+	max-width: 250px;
+	background-color: black;
+	font-weight: bold;
+	border-image-width: 20px;
+	text-align: center;
+	font-size: 33px ;
+}
+
+#herb{
+	display:flex;
+	width:10%;
+	height: 100px;
+}
+
+nav{
+	flex:3;
+}
+
+button[type=button]{
+	flex:4;
+	justify-content:flex-end;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	max-width: 110px;
+	color:#06023d;
+	background-color: #d4d1d1;
+	max-width: 120px;
+	border-color: blue;
+	border-radius: 20px;
+	font-size: 20px;
+	cursor:pointer;
+	transition: 1.6s;
+	-webkit-transition: 1.6s;
+	-moz-transform: 1.6s;
+
+}
+button:hover{
+	border-color: rgb(55, 0, 255);
+	border-width: 3px;
+	color:#FFFFFF;
+	background-color: blue;
+	transition: 0.6s;
+	-webkit-transition: 0.6s;
+
+}
+
+
+.nav-links{
+	display:flex;
+	justify-content: space-around;
+	text-decoration:none;
+	list-style: none;
+	padding-left: 560px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	
+
+}
+.nav-links a:active{
+	background: #d4d1d1;
+    position: relative;
+	border-bottom: 2px solid #702d00;
+	border-right: 10px solid #d1cfce;
+	border-left: 10px solid #d1cfce;
+	padding-right: 20px;
+	padding-left:20px ;
+}
+
+.nav-links a:hover{
+	margin-top:0;
+	color: #702d00;
+	border-bottom: 2px solid #00001b;
+	transition: 0.6s;
+	-webkit-transition: 0.6s;
+}
+
+.nav-link{
+	color:#00003d;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+#container{
+	display: flex;
+}
+.leftside{
+	background-image: url(stadion.jpg);
+	background-size: cover;
+	background-repeat: no repeat;
+	color:#f8f8f8;
+	width: 50%;
+	height:696px;
+	padding-left:30px;
+	border:3px solid rgb(158, 158, 158);
+	
+}
+
+
+.header2{
+	padding-top: 20px;
+	font-size:50px;
+	color: #FFFFFF;
+	
+}
+
+.text2{
+	font-size:20px;
+	padding-bottom: 110px;
+
+}
+
+.icon-facebook{
+	background-color: rgb(50, 9, 230);
+	color: #FFFFFF;
+	border-radius: 30px;
+	font-size: 15px;
+	padding: 20px 50px;
+	box-sizing: border-box;
+	cursor:pointer;
+	margin-right: 60px;
+	text-transform: uppercase;
+	transition: 0.6s;
+	-webkit-transition: 0.6s;
+	-moz-transform: 0.6s;
+	text-align:center;
+}
+
+.icon-facebook:active{
+	background:#0b0146;
+    position: relative;
+	border: 1px solid #702d00;
+}
+.icon-facebook:hover{
+	margin-top:0;
+	color: #FFFFFF;
+	border: 2px solid #FFFFFF ;
+}
+.icon-facebook:before{
+	display:flex;
+	color: #cdf745;
+}
+
+.icon-twitter{
+	background-color: rgb(77, 184, 255);
+	color: #FFFFFF;
+	border-radius: 30px;
+	font-size: 15px;
+	padding: 20px 50px;
+	box-sizing: border-box;
+	cursor:pointer;
+	margin-right: 100px;
+	text-transform: uppercase;
+	transition: 0.6s;
+	-webkit-transition: 0.6s;
+	-moz-transform: 0.6s;
+	text-align:center;
+}
+.icon-twitter:active{
+	background:#009cb8;
+    position: relative;
+	border: 1px solid #702d00;
+}
+.icon-twitter:hover{
+	margin-top:0;
+	color: #FFFFFF;
+	border: 2px solid #FFFFFF;
+}
+.icon-twitter:before{
+	display:flex;
+	color: #cdf745;
+}
+
+.rightside{
+	width:50%;
+	margin-top: 30px;
+	
+}
+
+.slidershow{
+	width:800px;
+	height: 500px;
+	overflow: hidden;
+	transform: translate(0%,0%);
+	border:3px solid rgb(158, 158, 158);
+	
+}
+
+
+.navigation{
+	position: absolute;
+	bottom: 20px;
+	left:50%;
+    transform: translateX(-50%);
+    display:flex;
+}
+
+.bar{
+	width:30px;
+	height: 10px;
+	border: 3px solid rgb(0, 0, 0);
+	margin: 6px;
+	cursor: pointer;
+	transition: 0.4s;
+
+}
+.bar:hover{
+	background: rgb(0, 0, 0);
+}
+input[name="r"]{
+	position: absolute;
+	visibility: hidden;
+}
+.slides{
+	width: 500%;
+	height: 100%;
+	display:flex;
+
+}
+.slide{
+	width: 20%;
+	transition:1.8s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+
+}
+
+#r1:checked ~ .s1{
+    margin-right: 0%;
+
+}
+#r2:checked ~ .s1{
+	margin-left: -20%;
+    
+}
+#r3:checked ~ .s1{
+    margin-left: -40%;
+    
+}
+#watch{
+	margin-left: 150px;
+	margin-top: 50px;
+	margin-right: 130px;
+	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: bolder;
+	font-size: 50px;
+	color: black;
+	border-right:15px solid rgb(158, 158, 158); ;
+	border-left:15px solid rgb(158, 158, 158);;
+	border-bottom:15px solid rgb(158, 158, 158); ;
+	border-radius: 15px;
+	background-color: brown;
+}
